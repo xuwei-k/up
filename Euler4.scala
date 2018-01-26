@@ -49,7 +49,7 @@ object Normal
 	def all(start: Int) : Traversable[Result] =
 		for(i <- (start to 1 by -1);
 			j <- (i to 1 by -1);
-			val prod = i*j
+			prod = i*j
 			if isPalindrome(prod) )
 		yield
 			Result(prod, i, j)
